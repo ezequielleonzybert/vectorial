@@ -2,16 +2,39 @@
 #define CANVAS_H
 
 #include <QWidget>
+#include <QButtonGroup>
+#include <QPainter>
+#include <QList>
+#include <QPen>
+#include <QBrush>
+#include <QString>
+#include "path.h"
 
 class Canvas : public QWidget
 {
     Q_OBJECT
 public:
-    explicit Canvas(QWidget *parent = nullptr);
+    explicit Canvas(QButtonGroup *toolsGroup, QWidget *parent = nullptr);
+    QButtonGroup *toolsGroup;
+    QString activeTool;
+private:
     void mousePressEvent(QMouseEvent *event);
     void mouseReleaseEvent(QMouseEvent *event);
     void mouseMoveEvent(QMouseEvent *event);
+    void paintEvent(QPaintEvent * event);
 
+    QPainter painter;
+    QList<Path> paths;
+    QPoint mousePosition;
+
+    QPen penPen;
+    QPen nodePen;
+    QBrush nodeBrush;
+
+    bool isDrawingPath = false;
+
+public slots:
+    void updateSlot();
 };
 
 #endif // CANVAS_H

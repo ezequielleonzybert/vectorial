@@ -3,10 +3,14 @@
 Toolbar::Toolbar(QWidget *parent)
     : QWidget{parent}
 {
-    toolsGroup = new QButtonGroup();
     selectTool = new QRadioButton("Select");
-    penTool = new QRadioButton("Pen");
+    selectTool->setObjectName("selectTool");
+    selectTool->setChecked(true);
 
+    penTool = new QRadioButton("Pen");
+    penTool->setObjectName("penTool");
+
+    toolsGroup = new QButtonGroup();
     toolsGroup->addButton(selectTool);
     toolsGroup->addButton(penTool);
 
