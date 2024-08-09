@@ -28,7 +28,8 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
         canvas.h canvas.cpp
         toolbar.h toolbar.cpp
         path.h path.cpp
-        push.bat
+        node.h node.cpp
+
 
     )
 # Define target properties for Android with Qt 6 as:

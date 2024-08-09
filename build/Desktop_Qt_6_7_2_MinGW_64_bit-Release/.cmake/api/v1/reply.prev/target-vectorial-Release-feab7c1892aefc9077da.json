@@ -378,11 +378,11 @@
 	"dependencies" : 
 	[
 		{
-			"id" : "vectorial_autogen_timestamp_deps::@6890427a1f51a3e7e1df"
-		},
-		{
 			"backtrace" : 0,
 			"id" : "vectorial_autogen::@6890427a1f51a3e7e1df"
+		},
+		{
+			"id" : "vectorial_autogen_timestamp_deps::@6890427a1f51a3e7e1df"
 		}
 	],
 	"id" : "vectorial::@6890427a1f51a3e7e1df",
@@ -497,8 +497,7 @@
 				2,
 				6,
 				8,
-				10,
-				11
+				10
 			]
 		},
 		{
@@ -509,7 +508,7 @@
 				5,
 				7,
 				9,
-				12
+				11
 			]
 		},
 		{
@@ -517,14 +516,14 @@
 			"sourceIndexes" : 
 			[
 				4,
-				13
+				12
 			]
 		},
 		{
 			"name" : "CMake Rules",
 			"sourceIndexes" : 
 			[
-				14
+				13
 			]
 		}
 	],
@@ -590,11 +589,6 @@
 			"backtrace" : 4,
 			"compileGroupIndex" : 0,
 			"path" : "path.cpp",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 4,
-			"path" : "push.bat",
 			"sourceGroupIndex" : 0
 		},
 		{

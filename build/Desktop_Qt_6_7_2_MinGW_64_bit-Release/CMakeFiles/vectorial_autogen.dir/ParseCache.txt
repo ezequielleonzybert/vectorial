@@ -768,7 +768,6 @@ C:/Users/Ezequiel/Documents/qt/vectorial/mainwindow.h
  mdp:C:/Users/Ezequiel/Documents/qt/vectorial/mainwindow.h
  mdp:C:/Users/Ezequiel/Documents/qt/vectorial/path.h
  mdp:C:/Users/Ezequiel/Documents/qt/vectorial/toolbar.h
-C:/Users/Ezequiel/Documents/qt/vectorial/path.h
 C:/Users/Ezequiel/Documents/qt/vectorial/toolbar.h
  mmc:Q_OBJECT
  mdp:C:/Qt/6.7.2/mingw_64/include/QtCore/QList
@@ -1169,8 +1168,11 @@ C:/Users/Ezequiel/Documents/qt/vectorial/toolbar.h
  mdp:C:/Users/Ezequiel/Documents/qt/vectorial/canvas.h
  mdp:C:/Users/Ezequiel/Documents/qt/vectorial/path.h
  mdp:C:/Users/Ezequiel/Documents/qt/vectorial/toolbar.h
+C:/Users/Ezequiel/Documents/qt/vectorial/path.h
 C:/Users/Ezequiel/Documents/qt/vectorial/canvas.cpp
-C:/Users/Ezequiel/Documents/qt/vectorial/main.cpp
 C:/Users/Ezequiel/Documents/qt/vectorial/mainwindow.cpp
+C:/Users/Ezequiel/Documents/qt/vectorial/main.cpp
 C:/Users/Ezequiel/Documents/qt/vectorial/path.cpp
 C:/Users/Ezequiel/Documents/qt/vectorial/toolbar.cpp
+C:/Users/Ezequiel/Documents/qt/vectorial/node.h
+C:/Users/Ezequiel/Documents/qt/vectorial/node.cpp

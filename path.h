@@ -6,12 +6,13 @@
 #include <QPainter>
 #include <QPen>
 #include <QBrush>
+#include <QString>
 
 class Path : public QPolygon
 {
 public:
     Path();
-    void render(QPainter *painter);
+    void render(QPainter *painter, QString activeTool, QPoint mousePosition);
 
     QPen linePen;
     QBrush lineBrush;

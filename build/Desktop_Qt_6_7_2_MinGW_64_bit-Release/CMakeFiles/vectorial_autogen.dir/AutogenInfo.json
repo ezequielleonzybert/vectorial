@@ -269,6 +269,12 @@
 			null
 		],
 		[
+			"C:/Users/Ezequiel/Documents/qt/vectorial/node.h",
+			"MU",
+			"EWIEGA46WW/moc_node.cpp",
+			null
+		],
+		[
 			"C:/Users/Ezequiel/Documents/qt/vectorial/path.h",
 			"MU",
 			"EWIEGA46WW/moc_path.cpp",
@@ -356,6 +362,7 @@
 		[ "C:/Users/Ezequiel/Documents/qt/vectorial/canvas.cpp", "MU", null ],
 		[ "C:/Users/Ezequiel/Documents/qt/vectorial/main.cpp", "MU", null ],
 		[ "C:/Users/Ezequiel/Documents/qt/vectorial/mainwindow.cpp", "MU", null ],
+		[ "C:/Users/Ezequiel/Documents/qt/vectorial/node.cpp", "MU", null ],
 		[ "C:/Users/Ezequiel/Documents/qt/vectorial/path.cpp", "MU", null ],
 		[ "C:/Users/Ezequiel/Documents/qt/vectorial/toolbar.cpp", "MU", null ]
 	],

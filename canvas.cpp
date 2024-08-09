@@ -44,6 +44,10 @@ void Canvas::mousePressEvent(QMouseEvent *event)
         }
         update();
     }
+    else if(activeTool == "selectTool"){
+
+    }
+
 }
 
 void Canvas::mouseReleaseEvent(QMouseEvent *event)
@@ -62,7 +66,7 @@ void Canvas::paintEvent(QPaintEvent *event)
     painter.setRenderHint(QPainter::Antialiasing, true);
 
     for(Path p : paths){
-        p.render(&painter);
+        p.render(&painter, activeTool, mousePosition);
     }
 
     if(isDrawingPath){
