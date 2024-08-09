@@ -3,8 +3,8 @@ cmake_minimum_required(VERSION 3.16)
 
 if("${CONFIG}" STREQUAL "" OR "${CONFIG}" STREQUAL "Release")
   file(REMOVE_RECURSE
-  "CMakeFiles\\nose_autogen.dir\\AutogenUsed.txt"
-  "CMakeFiles\\nose_autogen.dir\\ParseCache.txt"
-  "nose_autogen"
+  "CMakeFiles\\vectorial_autogen.dir\\AutogenUsed.txt"
+  "CMakeFiles\\vectorial_autogen.dir\\ParseCache.txt"
+  "vectorial_autogen"
   )
 endif()

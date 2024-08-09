@@ -28,7 +28,8 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
         canvas.h canvas.cpp
         toolbar.h toolbar.cpp
         path.h path.cpp
-        node.h node.cpp
+        push.bat
+
     )
 # Define target properties for Android with Qt 6 as:
 #    set_property(TARGET vectorial APPEND PROPERTY QT_ANDROID_PACKAGE_SOURCE_DIR

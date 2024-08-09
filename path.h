@@ -2,16 +2,21 @@
 #define PATH_H
 
 #include <QList>
-#include <QPainterPath>
-#include <QPolygon>
-#include "node.h"
+#include <QPoint>
+#include <QPainter>
+#include <QPen>
+#include <QBrush>
 
-class Path
+class Path : public QPolygon
 {
 public:
     Path();
-    void addNode(Node node);
-    QList<Node> nodes;
+    void render(QPainter *painter);
+
+    QPen linePen;
+    QBrush lineBrush;
+    QPen nodePen;
+    QBrush nodeBrush;
 };
 
 #endif // PATH_H

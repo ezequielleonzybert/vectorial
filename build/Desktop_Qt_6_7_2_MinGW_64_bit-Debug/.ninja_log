@@ -1,0 +1,17 @@
+# ninja log v6
+45	326	7449263163001578	vectorial_autogen/timestamp	e1f5f89ab5c3aec0
+1342	6273	7449261638406739	CMakeFiles/vectorial.dir/mainwindow.cpp.obj	236e19c352723263
+45	326	7449263163001578	vectorial_autogen/mocs_compilation.cpp	e1f5f89ab5c3aec0
+6551	7225	7449254844897581	CMakeFiles/vectorial.dir/node.cpp.obj	fde0719d9c97c37d
+45	326	7449263163001578	C:/Users/Ezequiel/Documents/qt/vectorial/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/vectorial_autogen/timestamp	e1f5f89ab5c3aec0
+45	326	7449263163001578	C:/Users/Ezequiel/Documents/qt/vectorial/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/vectorial_autogen/mocs_compilation.cpp	e1f5f89ab5c3aec0
+1338	6334	7449261638366756	CMakeFiles/vectorial.dir/main.cpp.obj	b877ca3b40dfb7d3
+328	3254	7449263165920664	CMakeFiles/vectorial.dir/path.cpp.obj	6cd2e4b9f57332b
+1334	6275	7449261638326776	CMakeFiles/vectorial.dir/vectorial_autogen/mocs_compilation.cpp.obj	bd3c1b3131092b1f
+1349	6270	7449261638476714	CMakeFiles/vectorial.dir/toolbar.cpp.obj	716a9c2419bff803
+3254	3777	7449263195186046	vectorial.exe	fe08ae9bad6d4f25
+1346	6591	7449261638446727	CMakeFiles/vectorial.dir/canvas.cpp.obj	71ad967a4da6c540
+38	1286	7449263801939228	vectorial_autogen/timestamp	e1f5f89ab5c3aec0
+38	1286	7449263801939228	vectorial_autogen/mocs_compilation.cpp	e1f5f89ab5c3aec0
+38	1286	7449263801939228	C:/Users/Ezequiel/Documents/qt/vectorial/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/vectorial_autogen/timestamp	e1f5f89ab5c3aec0
+38	1286	7449263801939228	C:/Users/Ezequiel/Documents/qt/vectorial/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/vectorial_autogen/mocs_compilation.cpp	e1f5f89ab5c3aec0

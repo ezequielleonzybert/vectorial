@@ -9,6 +9,7 @@
 #include <QBrush>
 #include <QString>
 #include "path.h"
+#include <QPolygon>
 
 class Canvas : public QWidget
 {
