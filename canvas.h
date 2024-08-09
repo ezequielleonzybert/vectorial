@@ -34,7 +34,7 @@ private:
     bool isDrawingPath = false;
 
 public slots:
-    void updateSlot();
+    void updateSlot(QAbstractButton *button);
 };
 
 #endif // CANVAS_H

@@ -17,5 +17,5 @@ MainWindow::MainWindow(QWidget *parent)
 
     hLayout->setStretch(1,1);
 
-    connect(toolbar, &QButtonGroup::buttonClicked, canvas, qOverload<>(&QWidget::update));
+    connect(toolbar->toolsGroup, &QButtonGroup::buttonClicked, canvas, &Canvas::updateSlot);
 }

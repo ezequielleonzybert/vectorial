@@ -91,7 +91,11 @@ void Canvas::paintEvent(QPaintEvent *event)
     painter.end();
 }
 
-void Canvas::updateSlot()
+void Canvas::updateSlot(QAbstractButton *button)
 {
+    if(activeTool == "penTool"){
+        isDrawingPath = false;
+    }
+    activeTool = button->objectName();
     update();
 }
