@@ -15,7 +15,7 @@ void Path::render(QPainter *painter)
     for(int i = 0; i < size()-1; i++){
         painter->drawLine(point(i), point(i+1));
     }
-
+//
     painter->setPen(nodePen);
     painter->setBrush(nodeBrush);
     for(const QPoint &p : *this){
