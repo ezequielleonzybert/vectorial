@@ -7,6 +7,7 @@
 #include <QPen>
 #include <QBrush>
 #include <QString>
+#include "node.h"
 
 class Path : public QPolygon
 {
@@ -14,10 +15,8 @@ public:
     Path();
     void render(QPainter *painter, QString activeTool, QPoint mousePosition);
 
-    QPen linePen;
-    QBrush lineBrush;
-    QPen nodePen;
-    QBrush nodeBrush;
+    QPen pen;
+    QBrush brush;
 };
 
 #endif // PATH_H

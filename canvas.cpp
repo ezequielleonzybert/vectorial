@@ -35,7 +35,7 @@ void Canvas::mousePressEvent(QMouseEvent *event)
             else{
                 isDrawingPath = true;
                 Path path;
-                path.append(mousePosition);
+                path.append(Node(mousePosition));
                 paths.append(path);
             }
         }

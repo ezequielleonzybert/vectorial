@@ -395,4 +395,5 @@ C:/Users/Ezequiel/Documents/qt/vectorial/build/Desktop_Qt_6_7_2_MinGW_64_bit-Rel
   C:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include/vadefs.h \
   C:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include/wchar.h \
   C:/Users/Ezequiel/Documents/qt/vectorial/canvas.h \
+  C:/Users/Ezequiel/Documents/qt/vectorial/node.h \
   C:/Users/Ezequiel/Documents/qt/vectorial/path.h
