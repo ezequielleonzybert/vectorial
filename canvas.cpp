@@ -17,11 +17,9 @@ Canvas::Canvas(QButtonGroup *toolsGroup, QWidget *parent)
 
     this->toolsGroup = toolsGroup;
 
-    // penPen.setWidthF(1);
-    // penPen.setColor(Qt::black);
-    // nodePen.setWidthF(1);
-    // nodePen.setColor(Qt::blue);
-    // nodeBrush = QBrush(Qt::white);
+    nodePen.setWidthF(1);
+    nodePen.setColor(Qt::blue);
+    nodeBrush = QBrush(Qt::white);
 }
 
 void Canvas::mousePressEvent(QMouseEvent *event)
@@ -30,28 +28,41 @@ void Canvas::mousePressEvent(QMouseEvent *event)
         if(event->button() == Qt::LeftButton){
             QPoint mousePosition = event->pos();
             if(isDrawingPath){
-                paths.last().append(mousePosition);
+                paths.last().nodes.append(Node(mousePosition));
             }
             else{
                 isDrawingPath = true;
                 Path path;
-                path.append(Node(mousePosition));
+                path.nodes.append(Node(mousePosition));
                 paths.append(path);
             }
         }
         if(event->button() == Qt::RightButton){
             isDrawingPath = false;
         }
-        update();
     }
     else if(activeTool == "selectTool"){
-
+        for(Path &p : paths){
+            for(Node &n : p.nodes){
+                if (n.highlighted){
+                    mousePositionOrigin = mousePosition;
+                    n.draggingFrom = n.position;
+                    n.dragging = true;
+                }
+            }
+        }
     }
-
+    update();
 }
 
 void Canvas::mouseReleaseEvent(QMouseEvent *event)
 {
+    for(Path &p : paths){
+        for(Node &n : p.nodes){
+            n.dragging = false;
+        }
+    }
+    update();
 }
 
 void Canvas::mouseMoveEvent(QMouseEvent *event)
@@ -63,16 +74,20 @@ void Canvas::mouseMoveEvent(QMouseEvent *event)
 void Canvas::paintEvent(QPaintEvent *event)
 {
     painter.begin(this);
-    painter.setRenderHint(QPainter::Antialiasing, true);
+    // painter.setRenderHint(QPainter::Antialiasing, true);
 
-    for(Path p : paths){
-        p.render(&painter, activeTool, mousePosition);
+    for(Path &p : paths){
+        p.update(activeTool, mousePosition, mousePositionOrigin); //TODO send whole canvas as argument
+        p.render(&painter, activeTool, mousePosition, mousePositionOrigin);
     }
 
     if(isDrawingPath){
-        QPoint p = paths.last().last();
-        painter.setPen(penPen);
+        QPoint p = paths.last().nodes.last().position;
+        painter.setPen(pen);
         painter.drawLine(p, mousePosition);
+        painter.setPen(nodePen);
+        painter.setBrush(nodeBrush);
+        painter.drawEllipse(p, 3, 3);;
     }
     painter.end();
 }

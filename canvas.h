@@ -27,8 +27,9 @@ private:
     QPainter painter;
     QList<Path> paths;
     QPoint mousePosition;
+    QPoint mousePositionOrigin;
 
-    QPen penPen;
+    QPen pen;
     QPen nodePen;
     QBrush nodeBrush;
 

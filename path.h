@@ -9,12 +9,14 @@
 #include <QString>
 #include "node.h"
 
-class Path : public QPolygon
+class Path
 {
 public:
     Path();
-    void render(QPainter *painter, QString activeTool, QPoint mousePosition);
+    void update(QString activeTool, QPoint mousePosition, QPoint mousePositionOrigin);
+    void render(QPainter *painter, QString activeTool, QPoint mousePosition, QPoint mousePositionOrigin);
 
+    QList<Node> nodes;
     QPen pen;
     QBrush brush;
 };
